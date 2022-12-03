@@ -1,5 +1,5 @@
 displayName: Emojivoto
-description: Linkerd is a service mesh for Kubernetes. It makes running services easier and safer by giving you runtime debugging, observability, reliability, and security—all without requiring any changes to your code.
+description: Emojivoto is a microservice application stack that allows users to vote for their favorite emoji, and tracks votes received on a leaderboard. May the best emoji win.
 category:
   - Buoyant
 type: catalog
@@ -8,7 +8,7 @@ scope:
   - workspace
 overview: |-
   # Overview
-   A microservice application that allows users to vote for their favorite emoji, and tracks votes received on a leaderboard. May the best emoji win.
+   Emojivoto is a microservice application stack that allows users to vote for their favorite emoji, and tracks votes received on a leaderboard. May the best emoji win.
 
    ## The application is composed of the following 3 services:
    - [emojivoto-web](https://github.com/BuoyantIO/emojivoto/blob/main/emojivoto-web): Web frontend and REST API
