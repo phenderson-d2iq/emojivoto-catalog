@@ -9,7 +9,8 @@ scope:
 overview: |-
   # Overview
    A microservice application that allows users to vote for their favorite emoji, and tracks votes received on a leaderboard. May the best emoji win.
-   The application is composed of the following 3 services:
+
+   ## The application is composed of the following 3 services:
    [emojivoto-web](https://github.com/BuoyantIO/emojivoto/blob/main/emojivoto-web): Web frontend and REST API
    [emojivoto-emoji-svc](https://github.com/BuoyantIO/emojivoto/blob/main/emojivoto-emoji-svc): gRPC API for finding and listing emoji
    [emojivoto-voting-svc](https://github.com/BuoyantIO/emojivoto/blob/main/emojivoto-voting-svc): gRPC API for voting and leaderboard
