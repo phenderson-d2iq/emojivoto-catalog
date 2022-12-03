@@ -12,7 +12,7 @@ spec:
         kind: GitRepository
         name: emojivoto-repo
         namespace: ${releaseNamespace}
-      version: 11
+#      version: 11.0
   interval: 15s
   install:
     remediation:
