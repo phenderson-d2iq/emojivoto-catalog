@@ -1,0 +1,28 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: emojivoto
+  namespace: ${releaseNamespace}
+spec:
+  chart:
+    spec:
+      chart: ./emojivoto-11.tgz
+      sourceRef:
+        kind: GitRepository
+        name: emojivoto-repo
+        namespace: ${releaseNamespace}
+#      version: 11.0
+  interval: 15s
+  install:
+    remediation:
+      retries: 30
+    createNamespace: false
+  upgrade:
+    remediation:
+      retries: 30
+  releaseName: emojivoto
+  valuesFrom:
+    - kind: ConfigMap
+      name: emojivoto-11-defaults
+  targetNamespace: ${releaseNamespace}
