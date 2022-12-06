@@ -4,10 +4,10 @@
 ![Emojivoto Catalog](./image.png)
 
 
-To add the Emojivoto catalog to DKP, you will first need to make the project namespace in the DKP UI. Once you have the project created run the following but replace `emojivoto` with your project namespace:
+To add the Emojivoto catalog to DKP, you will first need to make the project namespace in the DKP UI. Once you have the project created run the following but replace `dev-1` with your project namespace:
 
 ```
-export PROJECT_NAMESPACE=emojivoto
+export PROJECT_NAMESPACE=dev-1
 ```
 
 ```
@@ -28,3 +28,8 @@ spec:
   url: https://github.com/phenderson-d2iq/emojivoto-catalog
 EOF
 ``` 
+
+Please refer to [this](https://github.com/phenderson-d2iq/emojivoto-chart) github page for example values needed for the Helm Chart.
+
+---
+
